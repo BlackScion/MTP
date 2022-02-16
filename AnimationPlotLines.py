@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import ArtistAnimation
-from Quaternions import Quaternions
+from MTP.Quaternions import Quaternions
 
 def plot_movement(poses, n_figs, filename=None, ignore_root=True):
     # pose: (240, 66)
@@ -185,3 +185,4 @@ def animation_plot(animations, filename=None, ignore_root=False, interval=33.33)
     except AttributeError as e:
         print(e)
         # pass
+    return ani
